@@ -1,4 +1,10 @@
+
 //  every method if condition becomes true for every index present inside the array than it only return true else it retrun False
+
+// every method check karega ki kya callback me defined condition 
+// every method applied array ke har ek index ke liye true hai 
+// agar hogi toh True return me milega nhi toh false ye hamesha boolean value return karega,
+
 
 // it will return boolean value 
 
@@ -18,3 +24,4 @@ const greater$fifty = users.every((a)=>{
 });
 
 console.log(greater$fifty);
+console.log(typeof greater$fifty);
