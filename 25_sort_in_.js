@@ -1,5 +1,5 @@
 // sort method in js
-
+// ye real array ko change karega 
 const arr = [9,34,45,6,78,8,0,3];
 
 const arr2= ["Shaurya","raju", "kumar","ritesh"];
@@ -24,17 +24,22 @@ console.log(arr2);
     ];
     
     
+   const sorted  = users.sort((a,b)=>{
+        return a.price-b.price;
+    });
     
-
-    
-    
-    
-    
-    
-    
-    
-    
+    console.log(users);
+    console.log(sorted);
     
     
 
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
