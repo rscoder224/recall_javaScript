@@ -19,3 +19,25 @@ myarry2.fill(-1,5,8);
 
 
 console.log(myarry2);
+
+// fill method inside an array 
+// ye new keyword ka use krke new array bana Sakta hai
+// ya phir Existing Array ko bhi change kar sakta hai.
+
+
+const array = new Array(10).fill(-1);
+
+console.log(array);
+
+const array2 = [1,2,3,4,5,6,7,8];
+
+array2.fill(-1,1,6);
+
+
+console.log(array2);
+
+
+const array3 = [].concat(array2);
+
+console.log(array3);
+
