@@ -41,6 +41,16 @@ const unique_items = new Set(num2);
 console.log(unique_items);
 
 
+let length = 0;
+
+for(items of unique_items){
+    length++;
+}
+
+
+console.log(length);
+
+
 
 
 
