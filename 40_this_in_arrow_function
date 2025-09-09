@@ -1,0 +1,38 @@
+// arrow functions
+// arrow function consider this from surroundings
+// arrow function this === window === this
+// arrow this window object ko leta hai ;
+
+
+const user = {
+    firstName : "Shaurya",
+    age: 22,
+    email: "shaurya2803090@gmail.com",
+    about: ()=>{
+        console.log(`hello bro I am ${this.firstName} and I am ${this.age} years old`);
+    }
+}
+
+// sortcut of creating an method
+
+const user1 = {
+    firstName : "Dibbu",
+    age: 22,
+    email: "shaurya2803090@gmail.com",
+    about() {
+        console.log(`hello bro I am ${this.firstName} and I am ${this.age} years old`);
+    }
+}
+user.about();
+user1.about();
+
+
+
+
+
+
+
+
+
+
+
