@@ -1,7 +1,9 @@
+
 // Map Data Structure
 // Map
 // Map is An Iterable
 // Store Data in Ordered Fasion
+// order is gurenteed
 
 // Store Key Value Pairs Like Objects
 // objects are also called object Literals
@@ -62,8 +64,40 @@ persons.set('email','shaurya227@gmail.com');
 persons.set('phone',7384035462);
 persons.set('DOB','13/June/2004');
 
-        for
+        console.log(persons.keys());
+        // we have .keys to get keys of any map
+        
+        for(let key of persons.keys()){
+            console.log(typeof key, key);
+        }
 
+const ar = [];
+
+for(let [key,value] of persons){
+    ar.push(`${key} : ${value}`);
+}
+
+
+console.log(ar);
+
+const pe = new Set();
+
+pe.add(22);
+pe.add(44);
+pe.add(44);
+
+// Real life Example you have to add something new inside the object but you have to use Map for that
+
+const person3 = {
+    id: 1,
+    firstName: 'Dibbu'
+};
+
+const extraInfo = new Map();
+
+extraInfo.set(person3,{age:8,gender:'Male'})
+
+console.log(extraInfo.get(person3).age);
 
 
 
